@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+
+    <div class="particulas">
+
+    </div>
+    
+    <nav class="navegacao">
+
+        <ul class="menu">
+
+            <li>
+                <a href="#Inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#Sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#Projeto" class="menu-link">Projeto</a>
+            </li>
+            <li>
+                <a href="#Contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="Inicio" class="cabecalho">
+            <img src="Img/WhatsApp Image 2025-04-18 at 23.45.36.jpeg" alt="foto de Jucieu Felipe" class="foto-perfil">
+            <h1>Jucieu Felipe</h1>
+            <p class="cabecalho-sub-titulo">Desenvolvedor Front-End</p>
+    </main>
+
+    <selection id="Sobre" class="Sobre">
+
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+
+            <p class="sobre-paragrafo">Olá! Meu nome é Jucieu Felipe, tenho 20 anos e sou um desenvolvedor web apaixonado por tecnologia. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, onde venho me dedicando a aprender e praticar o desenvolvimento de aplicações voltadas para o front-end e back-end.
+
+                Desde meu primeiro contato com a programação, descobri o quanto é gratificante transformar ideias em soluções práticas e funcionais. Gosto de desafios e estou sempre buscando evoluir, seja aprendendo novas linguagens, frameworks ou aprimorando meus projetos pessoais.
+                
+                Meu objetivo é me tornar um profissional completo e contribuir com soluções criativas e eficientes no mundo da tecnologia.</p>
+
+        </div>
+    </selection>
+
+    <selection id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projeto-card">
+                <img src="Img/download.jpg" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                <h3 class="info-projetos">Loja de carros</h3>
+                <p class="paragrafo-projetos">Loja virtual moderna com as melhoras off da atualizade</p>
+            </div>
+            </div>
+
+            <div class="projeto-card">
+                <img src="Img/images.jpg" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                <h3 class="info-projetos">Página de viagens</h3>
+                <p class="paragrafo-projetos">Loja virtual moderna com as melhoras off da atualizade</p>
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <img src="Img/download (1).jpg" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                <h3 class="info-projetos">Microsoft</h3>
+                <p class="paragrafo-projetos">Loja virtual moderna com as melhoras off da atualizade</p>
+            </div>
+            </div>
+        </div>
+
+
+    </selection>
+
+    <selection id="contatos" class="contatos">
+        <h2 class="contatos-titulos">Entre em contato</h2>
+        <form class="formulario-contatos" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form"> Enviar WhatsApp  </button>
+        </form>
+    </selection>
+
+
+
+   <script>
+
+    function enviarWhats(event) {
+        event.preventDefault()
+
+   const nome = document.getElementById('nome').value;
+   const mensagem = document.getElementById('mensagem').value;
+   const telefone = '5517997170648'
+
+   const texto = `Olá ! me chamo ${nome}, ${mensagem}`
+   const msgformatada = encodeURIComponent(texto)
+
+   const url = `https://wa.me/${telefone}?text=${msgformatada}`;
+
+   console.log(url);
+   
+
+   window.open (url, '_blank')
+    }
+
+
+</script>
+
+</body>
+</html>
