@@ -17,4 +17,4 @@
 
 ## Como Rodar o Projeto Localmente
 
-https://github.com/lipenaminha/meu-site-porf-lio.git
+https://lipenaminha.github.io/meu-site-porf-lio/#Inicio
