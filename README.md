@@ -17,7 +17,4 @@
 
 ## Como Rodar o Projeto Localmente
 
-1. **Clone o repositório:**
-
-   ```bash
-   git clone https://github.com/lipenaminha/meu-site-porf-lio.git
+https://github.com/lipenaminha/meu-site-porf-lio.git
